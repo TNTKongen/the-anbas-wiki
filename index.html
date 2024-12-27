@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The anbas wiki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Welcome to the</p>
+    <h1>ANBAS WIKI</h1>
+
+    <button onclick='toggleDropDown("games")' class="dropdown1">Games</button>
+    <div id="games" class="dropdown" hidden>
+        <a href="">Anbas Basics</a><br>
+        <a href="">DOORS but with ANBAS</a><br>
+        <a href="">Five nights at McAnbas</a>
+    </div><br>
+    
+
+    <button onclick='toggleDropDown("characters")' class="dropdown1">Characters</button>
+    <div id="characters" class="dropdown" hidden>
+        <a href="">Anbas</a><br>
+        <a href="">Bank owner</a><br>
+        <a href="">Super cas</a><br>
+        <a href="">Cay gatnap</a><br>
+        <a href="">MrA</a><br>
+        
+        <button onclick='toggleDropDown("charactersAB")' class="dropdown2">Anbas basics characters</button>
+        <div id="charactersAB" class="dropdown" hidden>
+            <a href="">Anbas (anbas basics)</a><br>
+            <a href="">Fast anbas</a><br>
+            <a href="">Toy anbas</a><br>
+        </div><br>
+        <button onclick='toggleDropDown("charactersDBWA")' class="dropdown2">DOORS but with ANBAS characters</button>
+        <div id="charactersDBWA" class="dropdown" hidden>
+            <a href="">Anbas (Doors but with anbas)</a><br>
+            <a href="">Hog rider</a><br>
+            <a href="">Whatsapp floppa</a><br>
+            <a href="">Horse</a><br>
+            <a href="">Pillar john (Pizza time)</a><br>
+            <a href="">Nuke</a><br>
+            <a href="">Caseoh</a><br>
+            <a href="">SCP-106</a><br>
+        </div>
+        
+    </div>
+
+    <script>
+        function toggleDropDown(id) {
+            let element = document.getElementById(id);
+            element.hidden = !element.hidden;
+        }
+    </script>
+</body>
+</html>
