@@ -24,11 +24,45 @@ button.dropdown2 {
     margin: 5pt;
 }
 a:link {
-    color: blue;
+    color: rgb(68, 68, 255);
 }
 a:visited {
     color: palevioletred;
 }
 a:hover {
     color: lightblue;
+}
+img.pageimage {
+    width: 300pt;
+    height: 300pt;
+    object-fit:cover;
+    border: 5pt;
+    border-color: white;
+    border-style: groove;
+    background-color: black;
+    
+}
+img.character {
+    width: 150pt;
+    height: 150pt;
+    object-fit:cover;
+    border: 5pt;
+    border-color: white;
+    border-style: groove;
+    background-color: black;
+    
+}
+p.character {
+    font-weight: bold;
+    font-size: larger;
+}
+p:funfact {
+    font-weight: bold;
+    color: yellow;
+    outline: 2pt;
+    outline-color: aqua;
+    outline-style: ridge;
+}
+audio {
+    border-radius: 5pt;
 }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The anbas wiki - Doors but with ANBAS</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 onclick="document.location.href = '/index.html'">ANBAS WIKI</h1>
+
+    <img src="Images/dbwa_logo.png" class="pageimage" alt="Doors but with anbas logo">
+    <h2>DOORS but with ANBAS</h2>
+    <p>DOORS but with ANBAS is one of the Anbas games</p>
+    <a href="https://tntkongen.itch.io/doors-but-with-anbas">Itch.io page</a><br>
+
+    <button onclick='toggleDropDown("entities")' class="dropdown2">Entities</button>
+    <div id="entities" class="dropdown">
+        <img src="Images/anbas.png" alt="Anbas" class="character">
+        <p class="character" id="anbas">Anbas</p>
+        <p class="characterDesc">Anbas is just rush from doors but he screams when rushing though the room</p>
+        <p class="funfact">FUN FACT: he emits a bright green light</p>
+
+        <img src="Images/hogrider.png" alt="hog rider" class="character">
+        <p class="character" id="hogrider">Hog rider</p>
+        <p class="characterDesc">
+        Hog rider is just ambush from doors but instead of flickering the lights when ariving,
+        you will hear "Hog rider!" in the distance.
+        </p>
+        <audio controls>
+            <source src="Audio/ambush_spawn.mp3">
+        </audio>
+        
+
+
+    </div>
+    <script>
+        function toggleDropDown(id) {
+            let element = document.getElementById(id);
+            element.hidden = !element.hidden;
+        }
+    </script>
+</body>
+</html>
